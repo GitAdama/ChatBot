@@ -1,0 +1,30 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "Image",
+      "url": "F:/IA2/P10_TRAORE_Adama/botbuilder-samples/samples/python/21.corebot-app-insights/bots/resources/fly_me.png",
+      "size": "stretch"
+    },
+    {
+      "type": "TextBlock",
+      "spacing": "medium",
+      "size": "default",
+      "weight": "bolder",
+      "text": "Welcome to Bot Framework!",
+      "wrap": true,
+      "maxLines": 0
+    },
+    {
+      "type": "TextBlock",
+      "size": "default",
+      "isSubtle": "true",
+      "text": "This bot is for booking fly, thanks for using it for that purpose only !",
+      "wrap": true,
+      "maxLines": 0
+    }
+  ]
+
+}
