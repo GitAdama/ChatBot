@@ -67,7 +67,7 @@ client = pymongo.MongoClient(URI)
 myDB = client[DATA_BASE]
 cosdbStore = myDB[DB_COLLECTION]
 
-cosdbStore.insert_one({"user": "test"})
+# cosdbStore.insert_one({"user": "test"})
 
 
 # Create dialogs and Bot

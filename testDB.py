@@ -1,7 +1,7 @@
 from bson.objectid import ObjectId
 import  pymongo
 
-uri = "mongodb://dbp10adama:Y2bnS1kx9XpImZ5fxV0msuRqnECigdIhNuWQKuqHjnBOtU9ikcOBZQjD2EmyswKBFPNv1FkZctSYJNOn7JKuag==@dbp10adama.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@dbp10adama@"
+uri = "mongodb://p10db:82MFBcUdxpkcVuzfuauwuuIvQ6C4HG5CAIM5XasAd6P0wRobTkv0vsIJ5ZCB464rXC3Ar6OLfCaW65JGsHVCRQ==@p10db.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@p10db@"
 client = pymongo.MongoClient(uri)
 
 myDB = client["Conversations"]
@@ -15,5 +15,7 @@ col = myDB["ConvCollection"]
 # print(item["val"])
 # print(id)
 
-for i in col.find():
-    print(col.delete_one({"_id":i["_id"]}))
+# for i in col.find():
+#     # print(col.delete_one({"_id":i["_id"]}))
+#     print(col.find_one({"budget": "2000"}))
+print(col.find_one({"budget": "2000"}))
