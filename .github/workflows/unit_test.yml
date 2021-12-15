@@ -5,10 +5,10 @@ on: [push]
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: window-latest
     strategy:
       matrix:
-        python-version: [3.9]
+        python-version: [3.9.6]
 
     steps:
       - uses: actions/checkout@v2
@@ -41,7 +41,5 @@ jobs:
 # #           pip install -r requirements.txt
 #         working-directory: src
       - name: Run Tests
-        run: |
-          pwd
-          python -m unittest unit_test
+        run: python -m unittest unit_test
         # working-directory: unit_test
