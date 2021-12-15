@@ -3,7 +3,7 @@ import logging
 import sys
 import traceback
 from aiounittest import AsyncTestCase
-from botbuilder import testing
+# from botbuilder import testing
 from botbuilder.applicationinsights.application_insights_telemetry_client import ApplicationInsightsTelemetryClient
 from botbuilder.core import MessageFactory, middleware_set
 from botbuilder.core.conversation_state import ConversationState
