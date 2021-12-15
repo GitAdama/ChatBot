@@ -15,10 +15,10 @@ class DefaultConfig:
     LUIS_APP_ID = os.environ.get("LuisAppId", "ca94a985-2be7-4c01-9639-b1eabf364d0a")
 #   03786a1b-fd5d-47b5-8162-77087f15d0cf    
     # LUIS_API_KEY = os.environ.get("LuisAPIKey", "d64005b2c6784af9896afb766f71e14e")
-    LUIS_API_KEY = os.environ.get("LuisAPIKey", "a087c67998a749968f5b196587c2308e")
+    LUIS_API_KEY = os.environ.get("LuisAPIKey", "6a32c9bed4ec42a7a6eb6bd56e60d524") #"a087c67998a749968f5b196587c2308e")
     # LUIS endpoint host name, ie "westus.api.cognitive.microsoft.com"
     LUIS_API_HOST_NAME = os.environ.get("LuisAPIHostName", "myluisadama.cognitiveservices.azure.com/") #("LuisAPIHostName", "luisadama.cognitiveservices.azure.com/")
-    LUIS_API_HOST_NAME = os.environ.get("LuisAPIHostName", "myluisadama-authoring.cognitiveservices.azure.com/") #("LuisAPIHostName", "luisadama-authoring.cognitiveservices.azure.com/")
+    # LUIS_API_HOST_NAME = os.environ.get("LuisAPIHostName", "myluisadama-authoring.cognitiveservices.azure.com/") #("LuisAPIHostName", "luisadama-authoring.cognitiveservices.azure.com/")
     APPINSIGHTS_INSTRUMENTATION_KEY = os.environ.get(
         "AppInsightsInstrumentationKey", "c53d8bdd-108c-4b97-8f31-b26870f6f661"
     )
