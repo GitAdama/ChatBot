@@ -41,5 +41,6 @@ jobs:
 # #           pip install -r requirements.txt
 #         working-directory: src
       - name: Run Tests
+        run: pwd
         run: python -m unittest unit_test
-        working-directory: test
+        working-directory: unit_test
