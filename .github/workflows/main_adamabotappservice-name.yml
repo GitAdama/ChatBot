@@ -24,6 +24,7 @@ jobs:
 
       - name: Create and start virtual environment
         run: |
+          pip install virtualenv
           virtualenv venv
           cd .\venv\
           .\Scripts\activate
